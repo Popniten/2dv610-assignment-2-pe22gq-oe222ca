@@ -26,7 +26,7 @@ Hand in your strategy, test-plan, test-cases and test-report as and upload that 
 
 ## Peer review requirements
 
-## Review the Clarity
+### Review the Clarity
 
 Review the ease of which the document can be read and understood.
 
@@ -34,7 +34,7 @@ Review the ease of which the document can be read and understood.
 * Format and layout – The document uses Markdown. It uses Tables, Links, Titles of different levels when appropriate
 * Disposition – The order of chapters or sections follow naturally in way that they can be read from top to the bottom. The chapters are divided into paragraphs of text with a title.
 
-## Review the Completeness
+### Review the Completeness
 
 Review that all parts of the document exists and that each part actually contains what it should
 
@@ -55,7 +55,7 @@ Review that all parts of the document exists and that each part actually contain
   * Does the test-report show which tests that fail or succeed?
   * Is there testing the other group should have done?
 
-## Review the Content
+### Review the Content
 
 Review the test effort by the other group. Has the other group done a good job reporting their testing of the product?
 
