@@ -17,7 +17,6 @@ By Pärra & Kitte
 
 ### Strategy
 
-
 * How to reach goals?
 * How to divide test-efforts between the iterations?
 
@@ -33,3 +32,18 @@ By Pärra & Kitte
   * What failed last iteration
   * What code components has been updated
   * Traceability of test result
+
+How should we test?
+
+* Automation
+* Manual
+* Exploratory?
+* Beta?
+* Customer?
+
+Test-levels
+
+* Unit tests
+* Integration tests
+* Manual tests
+* Acceptance tests
