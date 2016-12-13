@@ -6,6 +6,8 @@ By Pärra & Kitte
 
 ### Goals
 
+* Stakeholders and testing goals
+
 ### Resources/Budget
 
 * Time ( 2 x 40 hours )
@@ -19,7 +21,15 @@ By Pärra & Kitte
 * How to reach goals?
 * How to divide test-efforts between the iterations?
 
-######
+## The Plan
 
-* Stakeholders and testing goals
-* 
+* Requirements
+  * Functional (test cases) and non-functional req.
+  * Static and dynamic
+* Prioritization
+  * Any part of system more important?
+  * What part is implemented?
+* What should be regressed?
+  * What failed last iteration
+  * What code components has been updated
+  * Traceability of test result
