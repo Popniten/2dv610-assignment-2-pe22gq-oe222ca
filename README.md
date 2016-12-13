@@ -20,7 +20,7 @@ By Pärra & Kitte
 * How to reach goals?
 * How to divide test-efforts between the iterations?
 
-## The Plan
+## The Plan - Guide for the work effort!
 
 * Requirements
   * Functional (test cases) and non-functional req.
@@ -63,3 +63,14 @@ Who is responsible?
 * Who runs that test?
 * Who has vital information?
 * Who uses the result?
+
+The risks, assumption!
+
+"What can affect our testing process?"
+
+* pre-requisites of testing efforts
+* test environment
+  * uptime of test system?
+  * access to test-specific equipment?
+  * access to test personnel
+* Mitigation strategy - how do we minimize the risk and the effect?
