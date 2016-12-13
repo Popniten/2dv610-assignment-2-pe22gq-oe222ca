@@ -20,6 +20,9 @@
 
 ### 1.3. Resources
 
+* Two persons (2x40 hours)
+* Raspberry Pi
+
 ## 2. Test strategy
 
 ### 2.1. Somesome
