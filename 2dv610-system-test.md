@@ -9,12 +9,12 @@
 
 ## 1. Introduction
 
-### 1.1 Project overview
+### i. Project overview
 
-### 1.2 Goals
+### ii. Goals
 
-### 1.3 Resources
+### iii. Resources
 
 ## 2. Test strategy
 
-### 2.1 Somesome
+### i. Somesome
