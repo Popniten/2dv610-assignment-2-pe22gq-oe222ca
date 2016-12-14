@@ -34,3 +34,22 @@
 | Req | Reqs tested | REQ1 | REQ2 | REQ3 | REQ4 | REQ5 | UC1.1 | UC1.2 | UC1.3 | UC1.4 |
 |----|-------|-----|----|
 | | | | |
+
+#### 3.2 Test case template
+
+##### Title
+titel
+
+##### Description
+alkdjasdlf
+
+##### Test steps
+
+1. x
+2. x
+
+##### Expected Result
+asdf
+
+##### Actual Result
+asdfa
