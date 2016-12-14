@@ -29,13 +29,11 @@
 
 ## 3. Test cases
 
-#### 3.1 Test - Req 1
-
-##### Title
-The web server should be responsive under high load
+#### 3.1 The web server should be responsive under high load
+Test-id: REQ1
 
 ##### Description
-alkdjasdlf
+decsription goes here...
 
 ##### Test steps
 
@@ -43,7 +41,7 @@ alkdjasdlf
 2. x
 
 ##### Expected Result
-asdf
+What it is...
 
 ## 4. Test results
 
