@@ -26,3 +26,11 @@
 ## 2. Test strategy
 
 ### 2.1. Somesome
+
+## 3. Test cases
+
+### 3.1. Matrix
+
+| Req | Reqs tested | REQ1 | REQ2 |
+|----|-------|-----|----|
+| | | | |
