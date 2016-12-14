@@ -29,16 +29,10 @@
 
 ## 3. Test cases
 
-### 3.1. Matrix
-
-| Req | Reqs tested | REQ1 | REQ2 | REQ3 | REQ4 | REQ5 | UC1.1 | UC1.2 | UC1.3 | UC1.4 |
-|----|-------|-----|----|
-| | | | |
-
-#### 3.2 Test case template
+#### 3.1 Test - Req 1
 
 ##### Title
-titel
+The web server should be responsive under high load
 
 ##### Description
 alkdjasdlf
@@ -51,5 +45,11 @@ alkdjasdlf
 ##### Expected Result
 asdf
 
-##### Actual Result
-asdfa
+## 4. Test results
+
+| Req | Reqs tested | REQ1 | REQ2 | REQ3 | REQ4 | REQ5 | UC1.1 | UC1.2 | UC1.3 | UC1.4 |
+|----|-------|-----|----|
+| | | | |
+
+* Matrix
+* Actual results
