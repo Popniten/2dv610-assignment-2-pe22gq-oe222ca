@@ -74,3 +74,7 @@ The risks, assumption!
   * access to test-specific equipment?
   * access to test personnel
 * Mitigation strategy - how do we minimize the risk and the effect?
+
+## Notes
+
+_To summarize test plan is a vision of what you want to achieve and test strategy is an action plan designed to achieve this vision!_
