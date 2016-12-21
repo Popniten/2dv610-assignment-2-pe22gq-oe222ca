@@ -18,10 +18,12 @@
 
 ### 1.2. Goals and objectives
 
+Internet of Things applications are usually lower end hardware that does not need to handle extreme user load, but need to be reliable when accessed. As many IoT-application might not need to handle more than a maximum of a couple of hundred user simultaniously. So for this server application and test strategy, the Test Lead has set the minimum number of the server to handle to 200.
+
 ### 1.3. Resources
 
 * Two persons (2x40 hours)
-* Raspberry Pi
+* Raspberry Pi for "live testing".
 
 ## 2. Test strategy
 
@@ -33,15 +35,21 @@
 Test-id: REQ1.1
 
 ##### Description
-decsription goes here...
+The web server should be perform "desirably" when recieving HTTP requests from multiple user at once. The minimum number of request per second the application should be able to handle is 200. To ensure this, it is requested to test it under double that load.
+
+Apache JMeter, or similar, should be used to during the performance and load tests.
+
+##### Pre-condition
+
+MySimpleWebserver should be started with working contents.
 
 ##### Test steps
 
-1. x
-2. x
+1. Setup a JMeter 'test plan' for the webserver.
+2. Set the 'Number of Threads' to 400 for a ramp-up period of 1 second.
 
 ##### Expected Result
-What it is...
+The webserver should _not_ fail, and the responses should not have an average latency higher than 30 milliseconds.
 
 #### 3.2 The web server must follow minimum requirements for HTTP 1.1
 Test-id: REQ2.1
@@ -151,4 +159,9 @@ What it is...
 | x | | | | | | | | |
 
 * Matrix
-* Actual results
+
+#### 3.1 The web server should be responsive under high load
+
+Test-id: REQ1.1
+
+
