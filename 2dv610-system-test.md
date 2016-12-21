@@ -162,6 +162,10 @@ What it is...
 
 ### 3.1 The web server should be responsive under high load
 
-Test-id: REQ1.1
+#### Test-id: REQ1.1
+
+The weberver holds up to the workload under the JMeter stresstest, and the average latency was reported to 18 millseconds with a deviation of up to 20 milliseconds at the most.
+
+#### Test result: Passed.
 
 
