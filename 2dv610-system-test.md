@@ -52,6 +52,8 @@ _MyWebserver_ should be started with working contents.
 #### Expected Result
 The webserver should _not_ fail (as in, not crash or report a failed status in JMeter), and the responses should not have an average latency higher than 30 milliseconds.
 
+---
+
 ### 3.2 The web server must follow minimum requirements for HTTP 1.1
 Test-id: REQ2.1
 
@@ -71,12 +73,16 @@ _MyWebserver_ should be started with working contents.
 
 Wireshark analysis should show that HTTP 1.1 is used when requesting the webserver in the web browser, and respond with the same protocol.
 
+---
+
 ### 3.3 The web server must work on Linux, Mac, Windows*.
 
 Test-id: REQ3.1
 
 #### Description
 decsription goes here...
+
+#### Pre-condition
 
 #### Test steps
 
@@ -85,6 +91,8 @@ decsription goes here...
 
 #### Expected Result
 What it is...
+
+---
 
 ### 3.4 The access log should be viewable from a text editor.
 
@@ -93,6 +101,8 @@ Test-id: REQ5.1
 #### Description
 decsription goes here...
 
+#### Pre-condition
+
 #### Test steps
 
 1. x
@@ -100,6 +110,8 @@ decsription goes here...
 
 #### Expected Result
 What it is...
+
+---
 
 ### 3.5 Start server - Error on port taken
 
