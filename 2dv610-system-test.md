@@ -172,7 +172,7 @@ What it is...
 
 ## 4. Test results
 
-### Requirement coverage
+### Requirement coverage matrix
 
 | Req | Reqs tested | REQ1.1 | REQ2.1 | REQ3.1 | REQ5.1 | UC1.1 | UC1.2 | UC1.3 |
 |-----|:-----------:|:------:|:------:|:------:|:------:|:-----:|:-----:|:-----:|
