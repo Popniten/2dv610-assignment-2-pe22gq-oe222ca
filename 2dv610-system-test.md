@@ -41,29 +41,35 @@ Apache JMeter, or similar, should be used to during the performance and load tes
 
 #### Pre-condition
 
-MySimpleWebserver should be started with working contents.
+_MyWebserver_ should be started with working contents.
 
 #### Test steps
 
 1. Setup a JMeter 'test plan' for the webserver.
 2. Set the 'Number of Threads' to 400 for a ramp-up period of 1 second.
+3. Run the load tests.
 
 #### Expected Result
-The webserver should _not_ fail, and the responses should not have an average latency higher than 30 milliseconds.
+The webserver should _not_ fail (as in, not crash or report a failed status in JMeter), and the responses should not have an average latency higher than 30 milliseconds.
 
 ### 3.2 The web server must follow minimum requirements for HTTP 1.1
 Test-id: REQ2.1
 
 #### Description
-decsription goes here...
+To get an accurate test of the HTTP protocol, Wireshark should be used to analyze the packets sent from the web server to verify that HTTP protocol version 1.1 or later is being used.
+
+#### Pre-condition
+
+_MyWebserver_ should be started with working contents.
 
 #### Test steps
 
-1. x
-2. x
+1. Setup Wireshark to listen to the trafic while accessing the web server.
+2. Access the web server using any web browser.
 
 #### Expected Result
-What it is...
+
+Wireshark analysis should show that HTTP 1.1 is used when requesting the webserver in the web browser, and respond with the same protocol.
 
 ### 3.3 The web server must work on Linux, Mac, Windows*.
 
@@ -168,4 +174,15 @@ The weberver holds up to the workload under the JMeter stresstest, and the avera
 
 #### Test result: Passed.
 
+---
+
+### 3.2 The web server must follow minimum requirements for HTTP 1.1
+
+#### Test-id: REQ2.1
+
+Wireshark packet analysis shows that HTTP 1.1 is being used.
+
+#### Test result: Passed.
+
+---
 
