@@ -31,123 +31,123 @@ Internet of Things applications are usually lower end hardware that does not nee
 
 ## 3. Test cases
 
-#### 3.1 The web server should be responsive under high load
+### 3.1 The web server should be responsive under high load
 Test-id: REQ1.1
 
-##### Description
+#### Description
 The web server should be perform "desirably" when recieving HTTP requests from multiple user at once. The minimum number of request per second the application should be able to handle is 200. To ensure this, it is requested to test it under double that load.
 
 Apache JMeter, or similar, should be used to during the performance and load tests.
 
-##### Pre-condition
+#### Pre-condition
 
 MySimpleWebserver should be started with working contents.
 
-##### Test steps
+#### Test steps
 
 1. Setup a JMeter 'test plan' for the webserver.
 2. Set the 'Number of Threads' to 400 for a ramp-up period of 1 second.
 
-##### Expected Result
+#### Expected Result
 The webserver should _not_ fail, and the responses should not have an average latency higher than 30 milliseconds.
 
-#### 3.2 The web server must follow minimum requirements for HTTP 1.1
+### 3.2 The web server must follow minimum requirements for HTTP 1.1
 Test-id: REQ2.1
 
-##### Description
+#### Description
 decsription goes here...
 
-##### Test steps
+#### Test steps
 
 1. x
 2. x
 
-##### Expected Result
+#### Expected Result
 What it is...
 
-#### 3.3 The web server must work on Linux, Mac, Windows*.
+### 3.3 The web server must work on Linux, Mac, Windows*.
 
 Test-id: REQ3.1
 
-##### Description
+#### Description
 decsription goes here...
 
-##### Test steps
+#### Test steps
 
 1. x
 2. x
 
-##### Expected Result
+#### Expected Result
 What it is...
 
-#### 3.4 The access log should be viewable from a text editor.
+### 3.4 The access log should be viewable from a text editor.
 
 Test-id: REQ5.1
 
-##### Description
+#### Description
 decsription goes here...
 
-##### Test steps
+#### Test steps
 
 1. x
 2. x
 
-##### Expected Result
+#### Expected Result
 What it is...
 
-#### 3.5 Start server - Error on port taken
+### 3.5 Start server - Error on port taken
 
 Test-id: UC1.1
 
-##### Description
+#### Description
 decsription goes here...
 
-##### Pre-condition
+#### Pre-condition
 
-##### Test steps
+#### Test steps
 
 1. x
 2. x
 
-##### Expected Result
+#### Expected Result
 What it is...
 
 ---
 
-#### 3.6 Start server - Error on restricted resources
+### 3.6 Start server - Error on restricted resources
 
 Test-id: UC1.2
 
-##### Description
+#### Description
 decsription goes here...
 
-##### Pre-condition
+#### Pre-condition
 
-##### Test steps
+#### Test steps
 
 1. x
 2. x
 
-##### Expected Result
+#### Expected Result
 What it is...
 
 ---
 
-#### 3.6 Start server - Access log could not be written to
+### 3.6 Start server - Access log could not be written to
 
 Test-id: UC1.3
 
-##### Description
+#### Description
 decsription goes here...
 
-##### Pre-condition
+#### Pre-condition
 
-##### Test steps
+#### Test steps
 
 1. x
 2. x
 
-##### Expected Result
+#### Expected Result
 What it is...
 
 ---
@@ -160,7 +160,7 @@ What it is...
 
 * Matrix
 
-#### 3.1 The web server should be responsive under high load
+### 3.1 The web server should be responsive under high load
 
 Test-id: REQ1.1
 
