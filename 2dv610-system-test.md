@@ -182,6 +182,7 @@ What it is...
 | REQ1.1 | | x | | | | | | |
 | REQ2.1 | | | x | | | | | |
 
+---
 
 ## 4.1 The web server should be responsive under high load
 
