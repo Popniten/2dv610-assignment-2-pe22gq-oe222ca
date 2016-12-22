@@ -183,7 +183,7 @@ What it is...
 | REQ2.1 | | | x | | | | | |
 
 
-## 3.1 The web server should be responsive under high load
+## 4.1 The web server should be responsive under high load
 
 ### Test-id: REQ1.1
 
@@ -193,7 +193,7 @@ The weberver holds up to the workload under the JMeter stresstest, and the avera
 
 ---
 
-## 3.2 The web server must follow minimum requirements for HTTP 1.1
+## 4.2 The web server must follow minimum requirements for HTTP 1.1
 
 ### Test-id: REQ2.1
 
@@ -203,7 +203,7 @@ Wireshark packet analysis shows that HTTP 1.1 is being used.
 
 ---
 
-## 3.3 The web server must work on Linux, Mac, Windows*
+## 4.3 The web server must work on Linux, Mac, Windows*
 
 ### Test-id: REQ3.1
 
