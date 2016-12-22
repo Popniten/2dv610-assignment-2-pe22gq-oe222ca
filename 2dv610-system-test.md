@@ -101,7 +101,26 @@ What it is...
 
 ---
 
-## 3.4 The access log should be viewable from a text editor.
+## 3.4 The source code should be released under GPL-2.0.
+
+Test-id: REQ4.1
+
+### Description
+decsription goes here...
+
+### Pre-condition
+
+### Test steps
+
+1. x
+2. x
+
+### Expected Result
+What it is...
+
+---
+
+## 3.5 The access log should be viewable from a text editor.
 
 Test-id: REQ5.1
 
