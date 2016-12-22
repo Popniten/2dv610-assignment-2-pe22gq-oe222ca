@@ -82,9 +82,14 @@ Wireshark analysis should show that HTTP 1.1 is used when requesting the webserv
 Test-id: REQ3.1
 
 ### Description
-decsription goes here...
+
+To test the webserver on all required operating systems, some testing will have to be postponed to future iterations as the test team currently does not have access to all operating system in the requirements.
+
+However, being a web server written in Java, the server _should_ work on all listed operating systems under the assumption that they have a proper installation of Java.
 
 ### Pre-condition
+
+* Java version 1.7 or later installed on system for test.
 
 ### Test steps
 
@@ -208,7 +213,13 @@ Wireshark packet analysis shows that HTTP 1.1 is being used.
 
 ### Test-id: REQ3.1
 
+As of this iteration, the test team did not have access to all required operating systems, therefor further testing is required in coming iterations.
 
+* Ubuntu 16.04: Passed
+* Linux Mint: N/A
+* MacOS: N/A
+* Windows 7: N/A
+* Windows 10: N/A
 
 ### Test result: Pending...
 
