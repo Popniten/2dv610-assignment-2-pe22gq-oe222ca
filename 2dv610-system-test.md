@@ -22,7 +22,7 @@ Internet of Things applications are usually lower end hardware that does not nee
 
 ## 1.3. Resources
 
-* Two persons, Tester #1 and Tester #2. One work week each, total of 80 hours.
+* Two persons, Tester #1 (Tester #1 will also act as Test Lead to make certain decisions) and Tester #2. One work week each, total of 80 hours.
 * Ubuntu 16.04 operating system as testing platform.
 
 # 2. Test strategy
