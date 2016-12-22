@@ -1,4 +1,4 @@
-## Table of content
+# Table of content
 ```
 1. Introduction
   1.1. Project overview
@@ -12,52 +12,54 @@
 4. Test results
 ```
 
-## 1. Introduction
+# 1. Introduction
 
-### 1.1. Project overview
+## 1.1. Project overview
 
-### 1.2. Goals and objectives
+## 1.2. Goals and objectives
 
 Internet of Things applications are usually lower end hardware that does not need to handle extreme user load, but need to be reliable when accessed. As many IoT-application might not need to handle more than a maximum of a couple of hundred user simultaniously. So for this server application and test strategy, the Test Lead has set the minimum number of the server to handle to 200.
 
-### 1.3. Resources
+## 1.3. Resources
 
-* Two persons (2x40 hours)
-* Raspberry Pi for "live testing".
+* Two persons, Tester #1 and Tester #2. One work week each, total of 80 hours.
+* Ubuntu 16.04 operating system as testing platform.
 
-## 2. Test strategy
+# 2. Test strategy
 
-### 2.1. Somesome
+## 2.1. Test levels
 
-## 3. Test cases
+Manual and exploratory.
 
-### 3.1 The web server should be responsive under high load
+# 3. Test cases
+
+## 3.1 The web server should be responsive under high load
 Test-id: REQ1.1
 
-#### Description
+### Description
 The web server should be perform "desirably" when recieving HTTP requests from multiple user at once. The minimum number of request per second the application should be able to handle is 200. To ensure this, it is requested to test it under double that load.
 
 Apache JMeter, or similar, should be used to during the performance and load tests.
 
-#### Pre-condition
+### Pre-condition
 
 _MyWebserver_ should be started with working contents.
 
-#### Test steps
+### Test steps
 
 1. Setup a JMeter 'test plan' for the webserver.
 2. Set the 'Number of Threads' to 400 for a ramp-up period of 1 second.
 3. Run the load tests.
 
-#### Expected Result
+### Expected Result
 The webserver should _not_ fail (as in, not crash or report a failed status in JMeter), and the responses should not have an average latency higher than 30 milliseconds.
 
 ---
 
-### 3.2 The web server must follow minimum requirements for HTTP 1.1
+## 3.2 The web server must follow minimum requirements for HTTP 1.1
 Test-id: REQ2.1
 
-#### Description
+### Description
 To get an accurate test of the HTTP protocol, Wireshark should be used to analyze the packets sent from the web server to verify that HTTP protocol version 1.1 or later is being used.
 
 #### Pre-condition
@@ -198,6 +200,16 @@ The weberver holds up to the workload under the JMeter stresstest, and the avera
 Wireshark packet analysis shows that HTTP 1.1 is being used.
 
 #### Test result: Passed.
+
+---
+
+### 3.3 The web server must work on Linux, Mac, Windows*
+
+#### Test-id: REQ3.1
+
+
+
+#### Test result: Pending...
 
 ---
 
