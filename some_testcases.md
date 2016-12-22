@@ -24,17 +24,17 @@ The access log should be readable.
 Test-id: UC1.1
 
 ### Description
-decsription goes here...
+If we try to start the server on a port that is taken we need the system to show this in an output. 
 
 ### Pre-condition
 
 ### Test steps
 
-1. x
-2. x
+1. Launch server with taken port
+2. Check output
 
 ### Expected Result
-What it is...
+The system output should be “Socket XX was taken” (XX is the socket number, Example “80”)
 
 ---
 
@@ -86,6 +86,16 @@ What it is...
 ### Test-id: REQ5.1
 
 There is no access log in the system.
+
+### Test result: Failed.
+
+---
+
+## x.x 
+
+### Test-id: UC1.1
+
+There is output indicating that the port is taken, however, it only shows "Port is taken" - not the port number being used.
 
 ### Test result: Failed.
 
