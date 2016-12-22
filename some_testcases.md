@@ -85,6 +85,7 @@ What it is...
 
 ### Test-id: REQ5.1
 
+There is no access log in the system.
 
 ### Test result: Failed.
 
