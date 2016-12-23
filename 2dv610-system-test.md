@@ -161,7 +161,27 @@ The server should start with the given port and resource folder.
 
 ---
 
-## 3.7 Start server - Error on port taken
+## 3.7 Start server - System starts a web server on the given port and presents that the server was started and writes a note in the access log.
+
+Test-id: UC1.4
+
+### Description
+
+Start the server with a given port and resource.
+
+### Test steps
+
+1. Launch server with a given port and resource
+2. Check output message.
+3. Check access log for note.
+
+### Expected Result
+
+The server should print out a message that it has started and add that to the access log.
+
+---
+
+## 3.8 Start server - Error on port taken
 
 Test-id: UC1.4a
 
@@ -180,7 +200,7 @@ The system output should be “Socket XX was taken” (XX is the socket number, 
 
 ---
 
-## 3.8 Start server - Error on restricted resources
+## 3.9 Start server - Error on restricted resources
 
 Test-id: UC1.4b
 
@@ -201,7 +221,7 @@ Server should present an error message saying "No access to folder _/folderName_
 
 ---
 
-## 3.6 Start server - Access log could not be written to
+## 3.10 Start server - Access log could not be written to
 
 Test-id: UC1.3
 
@@ -303,7 +323,25 @@ The server does not start without giving the port and resource as arguments to t
 
 ---
 
-## 4.7 Start server - Error on port taken
+## 4.7 Start server - System starts a web server...
+
+### Test-id: UC1.4
+
+The system prints out:
+
+```
+HTTP Server object constructed
+HTTP Server started
+Accept
+```
+
+But there is no output to the access log (which does not exist).
+
+### Test result: Failed.
+
+---
+
+## 4.8 Start server - Error on port taken
 
 ### Test-id: UC1.4a
 
@@ -313,7 +351,7 @@ There is output indicating that the port is taken, however, it only shows "Port 
 
 ---
 
-## 4.8 Start server - Error on restricted resources
+## 4.9 Start server - Error on restricted resources
 
 ### Test-id: UC1.4b
 
