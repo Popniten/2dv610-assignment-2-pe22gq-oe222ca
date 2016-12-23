@@ -14,7 +14,9 @@
 
 # 1. Introduction
 
-## 1.1. Project overview
+## 1.1. Test overview
+
+The execution of this plan should test an abandoned open source software, to see if it is stable and performant enough to be used by our client, _Software Development Company (SDC)_, for their intention of having a small web server for a wide range of Internet of Things applications.
 
 ## 1.2. Goals and objectives
 
@@ -25,11 +27,11 @@ Internet of Things applications are usually lower end hardware that does not nee
 * Two persons, Tester #1 (Tester #1 will also act as Test Lead to make certain decisions) and Tester #2. One work week each, total of 80 hours.
 * Ubuntu 16.04 operating system as testing platform.
 
-# 2. Test strategy
+# 2. Test plan
 
 ## 2.1. Test levels
 
-Manual and exploratory.
+The plan for this iteration is to perform manual tests to verify the current state of the web server application.
 
 # 3. Test cases
 
