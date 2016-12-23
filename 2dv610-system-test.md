@@ -16,11 +16,13 @@
 
 ## 1.1. Test overview
 
-The execution of this plan should test an abandoned open source software, to see if it is stable and performant enough to be used by our client, _Software Development Company (SDC)_, for their intention of having a small web server for a wide range of Internet of Things applications.
+The execution of this plan should test an abandoned open source software, to see if it is stable and performant enough to be used by our client, _Software Development Company (SDC)_, for their intention of having a small web server for a wide range of Internet of Things applications and hardware.
 
 ## 1.2. Goals and objectives
 
 Internet of Things applications are usually lower end hardware that does not need to handle extreme user load, but need to be reliable when accessed. As many IoT-application might not need to handle more than a maximum of a couple of hundred user simultaniously. So for this server application and test strategy, the Test Lead has set the minimum number of the server to handle to 200.
+
+The goal of the test plan is to see if the abandoned server software is suitable for _SDC_ to use for their IoT applications, and outline what bugs exists in the web server. This is needed to plan for further development of the server application, if it is deemed good enough by the stakeholders.
 
 ## 1.3. Resources
 
@@ -29,9 +31,15 @@ Internet of Things applications are usually lower end hardware that does not nee
 
 # 2. Test plan
 
+
+
 ## 2.1. Test levels
 
 The plan for this iteration is to perform manual tests to verify the current state of the web server application.
+
+## 2.2 What should not be tested
+
+In use case 3 part 2d, it is stated that an 500 internal error should be presented. This is very difficult to produce using the web browser and therefor the Test Lead has decided that there is no need to test it.
 
 # 3. Test cases
 
@@ -246,7 +254,7 @@ System presents an error message. “Cannot write to server log file log.txt”
 
 ## 3.10 Stop server
 
-Test-id: UC2
+Test-id: UC2.1
 
 ### Description
 
@@ -264,6 +272,29 @@ A web server should be started.
 ### Expected Result
 
 The system should print a stop message.
+
+---
+
+## 3.10 Stop server
+
+Test-id: UC2.2
+
+### Description
+
+When the server is stopped, it should be noted in the access log.
+
+### Pre-condition
+
+The test case UC2.1 should have been performed.
+
+### Test steps
+
+1. Perform the test UC2.1
+2. Check the access log for a note that the server has stopped.
+
+### Expected Result
+
+Access log should contain a stop message.
 
 ---
 
@@ -400,7 +431,7 @@ Could not perform this test accuratly as the system has not yet implemented the 
 
 ## 4.11 Stop server
 
-### Test-id: UC2
+### Test-id: UC2.1
 
 System prints out:
 
@@ -413,4 +444,13 @@ HTTP Server stopped
 
 ---
 
+## 4.12 Stop server
+
+### Test-id: UC2.2
+
+Access log could not be accessed.
+
+### Test result: Failed.
+
+---
 
