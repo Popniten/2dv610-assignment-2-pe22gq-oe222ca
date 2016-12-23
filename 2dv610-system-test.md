@@ -223,20 +223,24 @@ Server should present an error message saying "No access to folder _/folderName_
 
 ## 3.10 Start server - Access log could not be written to
 
-Test-id: UC1.3
+Test-id: UC1.4c
 
 ### Description
-decsription goes here...
+
+If the system does not have write permissions on the `log.txt` there should be an error message printed.
 
 ### Pre-condition
 
+Server started with no read/write permissions on the resource folder.
+
 ### Test steps
 
-1. x
-2. x
+1. Start server.
+2. Check for error message about accessing the log file.
 
 ### Expected Result
-What it is...
+
+System presents an error message. “Cannot write to server log file log.txt”
 
 ---
 
@@ -361,4 +365,13 @@ The server starts without any error messages displayed, but when accessing the w
 
 ---
 
+## 4.10 Start server - The access log could not be written to
+
+### Test-id: UC1.4c
+
+Could not perform this test accuratly as the system has not yet implemented the access log.
+
+### Test result: Failed.
+
+---
 
