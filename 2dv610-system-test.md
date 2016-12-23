@@ -293,7 +293,7 @@ There is no access log in the system.
 
 ---
 
-## 4.6 Start server - Error on port taken
+## 4.6 Start server - System asks for socket port number and shared resource container
 
 ### Test-id: UC1.2
 
