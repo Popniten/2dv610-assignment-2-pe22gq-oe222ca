@@ -339,6 +339,8 @@ Content should be visible in the browser, and a message should be written to the
 
 ## 4.1 The web server should be responsive under high load
 
+Test performed by: Tester #1
+
 ### Test-id: REQ1.1
 
 The weberver holds up to the workload under the JMeter stresstest, and the average latency was reported to 18 millseconds with a deviation of up to 20 milliseconds at the most.
@@ -349,6 +351,8 @@ The weberver holds up to the workload under the JMeter stresstest, and the avera
 
 ## 4.2 The web server must follow minimum requirements for HTTP 1.1
 
+Test performed by: Tester #1
+
 ### Test-id: REQ2.1
 
 Wireshark packet analysis shows that HTTP 1.1 is being used.
@@ -358,6 +362,8 @@ Wireshark packet analysis shows that HTTP 1.1 is being used.
 ---
 
 ## 4.3 The web server must work on Linux, Mac, Windows*
+
+Test performed by: Tester #2
 
 ### Test-id: REQ3.1
 
@@ -376,6 +382,8 @@ As of this iteration, the test team did not have access to all required operatin
 
 ## 4.4 The source code should be released under GPL-2.0.
 
+Test performed by: Tester #1
+
 ### Test-id: REQ4.1
 
 The abandonware is released under the MIT license, which allows for a GPL-2.0 sublicense. 
@@ -385,6 +393,8 @@ The abandonware is released under the MIT license, which allows for a GPL-2.0 su
 ---
 
 ## 4.5 The access log should be viewable from a text editor.
+
+Test performed by: Tester #2
 
 ### Test-id: REQ5.1
 
@@ -396,6 +406,8 @@ There is no access log in the system.
 
 ## 4.6 Start server - System asks for socket port number and shared resource container
 
+Test performed by: Tester #2
+
 ### Test-id: UC1.2
 
 The server does not start without giving the port and resource as arguments to the start command. The system throws an exception without them.
@@ -405,6 +417,8 @@ The server does not start without giving the port and resource as arguments to t
 ---
 
 ## 4.7 Start server - System starts a web server...
+
+Test performed by: Tester #1
 
 ### Test-id: UC1.4
 
@@ -424,6 +438,8 @@ But there is no output to the access log (which does not exist).
 
 ## 4.8 Start server - Error on port taken
 
+Test performed by: Tester #2
+
 ### Test-id: UC1.4a
 
 There is output indicating that the port is taken, however, it only shows "Port is taken" - not the port number being used.
@@ -433,6 +449,8 @@ There is output indicating that the port is taken, however, it only shows "Port 
 ---
 
 ## 4.9 Start server - Error on restricted resources
+
+Test performed by: Tester #1
 
 ### Test-id: UC1.4b
 
@@ -444,6 +462,8 @@ The server starts without any error messages displayed, but when accessing the w
 
 ## 4.10 Start server - The access log could not be written to
 
+Test performed by: Tester #1
+
 ### Test-id: UC1.4c
 
 Could not perform this test accuratly as the system has not yet implemented the access log.
@@ -453,6 +473,8 @@ Could not perform this test accuratly as the system has not yet implemented the 
 ---
 
 ## 4.11 Stop server
+
+Test performed by: Tester #2
 
 ### Test-id: UC2.1
 
@@ -469,6 +491,8 @@ HTTP Server stopped
 
 ## 4.12 Stop server
 
+Test performed by: Tester #1
+
 ### Test-id: UC2.2
 
 Access log could not be accessed.
@@ -478,6 +502,8 @@ Access log could not be accessed.
 ---
 
 ## 4.12 Request shared resource
+
+Test performed by: Tester #2
 
 ### Test-id: UC3.2
 
