@@ -108,17 +108,15 @@ What it is...
 Test-id: REQ4.1
 
 ### Description
-decsription goes here...
-
-### Pre-condition
+The web server application should be released under GPL-2.0 for _SDC_. Control that the license of the abandonded server source code allows for this license.
 
 ### Test steps
 
-1. x
-2. x
+1. Investigate abandonware source code.
 
 ### Expected Result
-What it is...
+
+Should allow the license to be GPL-2.0
 
 ---
 
@@ -244,6 +242,16 @@ As of this iteration, the test team did not have access to all required operatin
 * ...
 
 ### Test result: Pending...
+
+---
+
+## 4.4 The source code should be released under GPL-2.0.
+
+### Test-id: REQ4.1
+
+The abandonware is released under the MIT license, which allows for a GPL-2.0 sublicense. 
+
+### Test result: Passed.
 
 ---
 
