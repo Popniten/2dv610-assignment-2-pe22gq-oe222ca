@@ -244,6 +244,29 @@ System presents an error message. “Cannot write to server log file log.txt”
 
 ---
 
+## 3.10 Stop server
+
+Test-id: UC2
+
+### Description
+
+When the administrator stops the web server, the system should inform the administrator that the server has successfully stopped.
+
+### Pre-condition
+
+A web server should be started.
+
+### Test steps
+
+1. In the terminal, write `stop` to stop the server.
+2. Check the output.
+
+### Expected Result
+
+The system should print a stop message.
+
+---
+
 # 4. Test results
 
 ## Requirement coverage matrix
@@ -374,4 +397,20 @@ Could not perform this test accuratly as the system has not yet implemented the 
 ### Test result: Failed.
 
 ---
+
+## 4.11 Stop server
+
+### Test-id: UC2
+
+System prints out:
+
+```
+HTTP Server Accept thread stopped
+HTTP Server stopped
+```
+
+### Test result: Passed.
+
+---
+
 
