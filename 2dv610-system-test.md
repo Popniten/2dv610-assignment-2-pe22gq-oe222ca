@@ -411,7 +411,7 @@ A `400 Bad Request` response status should be returned.
 ✔ = Passed test.
 × = Failed test.
 
-Total number of tests: 16. Passed: 5. Failed: 11.
+Total number of tests: _16_. Passed: _5_. Failed: _11_.
 
 ---
 
