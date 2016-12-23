@@ -1,6 +1,5 @@
 # Table of content
 
-- [Table of content](#table-of-content)
 - [1. Introduction](#1-introduction)
   - [1.1. Test overview](#11-test-overview)
   - [1.2. Goals and objectives](#12-goals-and-objectives)
