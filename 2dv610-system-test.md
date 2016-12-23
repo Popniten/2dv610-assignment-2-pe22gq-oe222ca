@@ -155,7 +155,7 @@ Test-id: UC1.2
 
 ### Description
 
-When staring a server using the command `java -jar server.jar`, the system should ask for a port to use as well as a folder with website resources.
+When starting a server using the command `java -jar server.jar`, the system should ask for a port to use as well as a folder with website resources.
 
 ### Test steps
 
@@ -318,6 +318,29 @@ A web server should be started.
 ### Expected Result
 
 Content should be visible in the browser, and a message should be written to the access log.
+
+---
+
+## 3.12 Request shared resource - 404 Not Found
+
+Test-id: UC3.2a
+
+### Description
+
+When trying to access a resource that does not exist, an error message should be presented to the browser user.
+
+### Pre-condition
+
+A web server should be started.
+
+### Test steps
+
+1. Access a non-existing resource in a web browser.
+2. Check that error message is served.
+
+### Expected Result
+
+A `404 Not Found` should be presented in the web browser.
 
 ---
 
@@ -512,4 +535,17 @@ Content is visible in the browser, but the system failed to write to the log fil
 ### Test result: Failed.
 
 ---
+
+## 4.13 Request shared resource - 404 Not Found
+
+Test performed by: Tester #1
+
+### Test-id: UC3.2
+
+A 404-message is correctly being displayed.
+
+### Test result: Passed.
+
+---
+
 
