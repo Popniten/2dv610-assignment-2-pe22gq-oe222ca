@@ -411,15 +411,7 @@ A `400 Bad Request` response status should be returned.
 ✔ = Passed test.
 × = Failed test.
 
-| Req | Reqs tested | REQ1.1 | REQ2.1 | REQ3.1 | REQ5.1 | UC1.4a | UC1.2 | UC1.3 |
-|-----|:-----------:|:------:|:------:|:------:|:------:|:-----:|:-----:|:-----:|
-| **Test cases** | 4 | | | | | | | |
-| REQ1.1 | | x | | | | | | |
-| REQ2.1 | | | x | | | | | |
-| REQ3.1 | | | | x | | | | |
-| REQ4.1 | | | | | x | | | |
-| REQ5.1 | | | | | | x | | |
-| UC1.4a | | | | | | | | x |
+Total number of tests: 16. Passed: 5. Failed: 11.
 
 ---
 
