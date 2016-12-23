@@ -141,7 +141,27 @@ The access log should be readable.
 
 ---
 
-## 3.6 Start server - Error on port taken
+## 3.6 Start server - System asks for socket port number and shared resource container
+
+Test-id: UC1.2
+
+### Description
+
+When staring a server using the command `java -jar server.jar`, the system should ask for a port to use as well as a folder with website resources.
+
+### Test steps
+
+1. Start the server.
+2. Enter a port number.
+3. Enter a resource location.
+
+### Expected Result
+
+The server should start with the given port and resource folder.
+
+---
+
+## 3.7 Start server - Error on port taken
 
 Test-id: UC1.4a
 
@@ -160,7 +180,7 @@ The system output should be “Socket XX was taken” (XX is the socket number, 
 
 ---
 
-## 3.7 Start server - Error on restricted resources
+## 3.8 Start server - Error on restricted resources
 
 Test-id: UC1.4b
 
@@ -275,6 +295,16 @@ There is no access log in the system.
 
 ## 4.6 Start server - Error on port taken
 
+### Test-id: UC1.2
+
+The server does not start without giving the port and resource as arguments to the start command. The system throws an exception without them.
+
+### Test result: Failed.
+
+---
+
+## 4.7 Start server - Error on port taken
+
 ### Test-id: UC1.4a
 
 There is output indicating that the port is taken, however, it only shows "Port is taken" - not the port number being used.
@@ -283,7 +313,7 @@ There is output indicating that the port is taken, however, it only shows "Port 
 
 ---
 
-## 4.7 Start server - Error on restricted resources
+## 4.8 Start server - Error on restricted resources
 
 ### Test-id: UC1.4b
 
