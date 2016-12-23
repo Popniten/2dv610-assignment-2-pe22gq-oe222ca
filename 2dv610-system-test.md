@@ -139,11 +139,10 @@ However, being a web server written in Java, the server _should_ work on all lis
 
 ### Test steps
 
-1. x
-2. x
+1. Start the web server with the command `java -jar server.jar <PORT> <RESOURCE>`
 
 ### Expected Result
-What it is...
+The web server should launch and serve contents on the specific operating system.
 
 ---
 
