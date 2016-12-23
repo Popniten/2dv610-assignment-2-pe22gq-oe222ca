@@ -28,6 +28,7 @@ The goal of the test plan is to see if the abandoned server software is suitable
 
 * Two persons, Tester #1 (Tester #1 will also act as Test Lead to make certain decisions) and Tester #2. One work week each, total of 80 hours.
 * Ubuntu 16.04 operating system as testing platform.
+* Postman Chrome plugin for API testing.
 
 # 2. Test plan
 
@@ -275,7 +276,7 @@ The system should print a stop message.
 
 ---
 
-## 3.10 Stop server
+## 3.11 Stop server
 
 Test-id: UC2.2
 
@@ -298,7 +299,7 @@ Access log should contain a stop message.
 
 ---
 
-## 3.11 Request shared resource
+## 3.12 Request shared resource
 
 Test-id: UC3.2
 
@@ -321,7 +322,7 @@ Content should be visible in the browser, and a message should be written to the
 
 ---
 
-## 3.12 Request shared resource - 404 Not Found
+## 3.13 Request shared resource - 404 Not Found
 
 Test-id: UC3.2a
 
@@ -341,6 +342,52 @@ A web server should be started.
 ### Expected Result
 
 A `404 Not Found` should be presented in the web browser.
+
+---
+
+## 3.13 Request shared resource - 403 Forbidden
+
+Test-id: UC3.2b
+
+### Description
+
+When trying to access a resource that the server does not have read permissions on, the user should get a message that access is forbidden.
+
+### Pre-condition
+
+A web server should be started. A resource with restricted permissions should be present.
+
+### Test steps
+
+1. Access restricted resource.
+2. Web server should present the user with an error message.
+
+### Expected Result
+
+A `403 Forbidden` should be presented in the web browser.
+
+---
+
+## 3.13 Request shared resource - 400 Bad Request
+
+Test-id: UC3.2c
+
+### Description
+
+If trying to access the server with an invalid request, the server should respond with an error message.
+
+### Pre-condition
+
+A web server should be started.
+
+### Test steps
+
+1. Use Postman to send a PURGE request to the web server.
+2. Observe the response from the web server.
+
+### Expected Result
+
+A `400 Forbidden` response status should be returned.
 
 ---
 
@@ -548,4 +595,15 @@ A 404-message is correctly being displayed.
 
 ---
 
+## 4.14 Request shared resource - 403 Forbidden
+
+Test performed by: Tester #2
+
+### Test-id: UC3.2
+
+A faulty message was presented, instead of a 403 the result was that the server `unexpectedly closed the connection`.
+
+### Test result: Failed.
+
+---
 
