@@ -298,6 +298,29 @@ Access log should contain a stop message.
 
 ---
 
+## 3.11 Request shared resource
+
+Test-id: UC3.2
+
+### Description
+
+The server should deliver the shared resource to the web browser when a user accesses the website.
+
+### Pre-condition
+
+A web server should be started.
+
+### Test steps
+
+1. Access the website in a web browser.
+2. Check that content is served.
+
+### Expected Result
+
+Content should be visible in the browser, and a message should be written to the access log.
+
+---
+
 # 4. Test results
 
 ## Requirement coverage matrix
@@ -449,6 +472,16 @@ HTTP Server stopped
 ### Test-id: UC2.2
 
 Access log could not be accessed.
+
+### Test result: Failed.
+
+---
+
+## 4.12 Request shared resource
+
+### Test-id: UC3.2
+
+Content is visible in the browser, but the system failed to write to the log file.
 
 ### Test result: Failed.
 
