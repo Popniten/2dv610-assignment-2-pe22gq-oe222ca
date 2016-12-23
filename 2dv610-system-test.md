@@ -261,7 +261,7 @@ The abandonware is released under the MIT license, which allows for a GPL-2.0 su
 
 ---
 
-## 4.5 
+## 4.5 The access log should be viewable from a text editor.
 
 ### Test-id: REQ5.1
 
@@ -271,7 +271,7 @@ There is no access log in the system.
 
 ---
 
-## 4.6 
+## 4.6 Start server - Error on port taken
 
 ### Test-id: UC1.4a
 
@@ -281,7 +281,7 @@ There is output indicating that the port is taken, however, it only shows "Port 
 
 ---
 
-## 4.6 
+## 4.7 Start server - Error on restricted resources
 
 ### Test-id: UC1.4b
 
