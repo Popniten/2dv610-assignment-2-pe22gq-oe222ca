@@ -143,7 +143,7 @@ The access log should be readable.
 
 ## 3.6 Start server - Error on port taken
 
-Test-id: UC1.1
+Test-id: UC1.4a
 
 ### Description
 If we try to start the server on a port that is taken we need the system to show this in an output. 
@@ -160,22 +160,24 @@ The system output should be “Socket XX was taken” (XX is the socket number, 
 
 ---
 
-## 3.6 Start server - Error on restricted resources
+## 3.7 Start server - Error on restricted resources
 
-Test-id: UC1.2
+Test-id: UC1.4b
 
 ### Description
-decsription goes here...
+When trying to start a web server using a resource folder with insufficient rights, the server should present an error message that it cannot access the resources.
 
 ### Pre-condition
 
+Start a server using a folder with no read or write permissions for the user starting the server.
+
 ### Test steps
 
-1. x
-2. x
+1. Start the server using faulty folder permissions.
 
 ### Expected Result
-What it is...
+
+Server should present an error message saying "No access to folder _/folderName_".
 
 ---
 
