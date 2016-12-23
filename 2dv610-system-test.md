@@ -125,36 +125,38 @@ Should allow the license to be GPL-2.0
 Test-id: REQ5.1
 
 ### Description
-decsription goes here...
+The system should have a access log that you can access and read from a text editor.
 
 ### Pre-condition
+Started server with wortking content
+Some test-access visits
 
 ### Test steps
 
-1. x
-2. x
+1. Open access log
+2. Read access log
 
 ### Expected Result
-What it is...
+The access log should be readable.
 
 ---
 
-## 3.5 Start server - Error on port taken
+## 3.6 Start server - Error on port taken
 
 Test-id: UC1.1
 
 ### Description
-decsription goes here...
+If we try to start the server on a port that is taken we need the system to show this in an output. 
 
 ### Pre-condition
 
 ### Test steps
 
-1. x
-2. x
+1. Launch server with taken port
+2. Check output
 
 ### Expected Result
-What it is...
+The system output should be “Socket XX was taken” (XX is the socket number, Example “80”)
 
 ---
 
@@ -257,3 +259,22 @@ The abandonware is released under the MIT license, which allows for a GPL-2.0 su
 
 ---
 
+## 4.5 
+
+### Test-id: REQ5.1
+
+There is no access log in the system.
+
+### Test result: Failed.
+
+---
+
+## 4.6 
+
+### Test-id: UC1.1
+
+There is output indicating that the port is taken, however, it only shows "Port is taken" - not the port number being used.
+
+### Test result: Failed.
+
+---
