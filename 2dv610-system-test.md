@@ -139,7 +139,7 @@ However, being a web server written in Java, the server _should_ work on all lis
 
 ### Test steps
 
-1. Start the web server with the command `java -jar server.jar <PORT> <RESOURCE>`
+1. Start the web server with the command `java -jar server.jar PORT RESOURCE`
 
 ### Expected Result
 The web server should launch and serve contents on the specific operating system.
@@ -432,24 +432,24 @@ A `400 Bad Request` response status should be returned.
 |Reqs|Reqs Tested|REQ1.1|REQ2.1|REQ3.1|REQ4.1|REQ5.1|UC1.2|UC1.4|UC1.4a|UC1.4b|UC1.4c |UC2.1|UC2.2|UC3.2|UC3.2a|UC3.2b|UC3.2c|
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |**Test cases**| 16 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|REQ1.1|   | ✔ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|REQ2.1|   |   | ✔ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|REQ1.1|   | ✓ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|REQ2.1|   |   | ✓ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |REQ3.1|   |   |   | × |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|REQ4.1|   |   |   |   | ✔ |   |   |   |   |   |   |   |   |   |   |   |   |
+|REQ4.1|   |   |   |   | ✓ |   |   |   |   |   |   |   |   |   |   |   |   |
 |REQ5.1|   |   |   |   |   | × |   |   |   |   |   |   |   |   |   |   |   |
 |UC1.2|    |   |   |   |   |   | × |   |   |   |   |   |   |   |   |   |   |
 |UC1.4|    |   |   |   |   |   |   | × |   |   |   |   |   |   |   |   |   |
 |UC1.4a|   |   |   |   |   |   |   |   | × |   |   |   |   |   |   |   |   |
 |UC1.4b|   |   |   |   |   |   |   |   |   | × |   |   |   |   |   |   |   |
 |UC1.4c|   |   |   |   |   |   |   |   |   |   | × |   |   |   |   |   |   |
-|UC2.1|    |   |   |   |   |   |   |   |   |   |   | ✔ |   |   |   |   |   |
+|UC2.1|    |   |   |   |   |   |   |   |   |   |   | ✓ |   |   |   |   |   |
 |UC2.2|    |   |   |   |   |   |   |   |   |   |   |   | × |   |   |   |   |
 |UC3.2|    |   |   |   |   |   |   |   |   |   |   |   |   | × |   |   |   |
-|UC3.2a|   |   |   |   |   |   |   |   |   |   |   |   |   |   | ✔ |   |   |
+|UC3.2a|   |   |   |   |   |   |   |   |   |   |   |   |   |   | ✓ |   |   |
 |UC3.2b|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | × |   |
 |UC3.2c|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | × |
 
-✔ = Passed test.
+✓ = Passed test.
 × = Failed test.
 
 Total number of tests: _16_. Passed: _5_. Failed: _11_.
