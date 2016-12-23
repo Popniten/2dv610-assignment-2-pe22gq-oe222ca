@@ -380,7 +380,7 @@ A web server should be started.
 
 ### Expected Result
 
-A `400 Forbidden` response status should be returned.
+A `400 Bad Request` response status should be returned.
 
 ---
 
@@ -606,8 +606,8 @@ Test performed by: Tester #1
 
 ### Test-id: UC3.2c
 
-A faulty message was presented, instead of a 403 the result was that the server `unexpectedly closed the connection`.
+A `400 Bad Request` was returned from the server using Postman.
 
-### Test result: Failed.
+### Test result: Passed.
 
 ---
