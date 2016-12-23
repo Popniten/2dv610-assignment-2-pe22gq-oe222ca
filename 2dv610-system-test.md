@@ -69,11 +69,15 @@ The goal of the test plan is to see if the abandoned server software is suitable
 
 The plan for this iteration is to perform manual tests to verify the current state of the web server application.
 
+All the tests will be performed by Tester #1 and Tester #2.
+
 ## 2.2 What should not be tested
 
 In use case 3 part 2d, it is stated that an 500 internal error should be presented. This is very difficult to produce using the web browser and therefor the Test Lead has decided that there is no need to test it.
 
 # 3. Test cases
+
+The test case IDs are a direct reference to the requirements document, and the requirements and use cases in there.
 
 ## 3.1 The web server should be responsive under high load
 Test-id: REQ1.1
