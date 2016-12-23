@@ -51,7 +51,7 @@ The execution of this plan should test an abandoned open source software, to see
 
 ## 1.2. Goals and objectives
 
-Internet of Things applications are usually lower end hardware that does not need to handle extreme user load, but need to be reliable when accessed. As many IoT-application might not need to handle more than a maximum of a couple of hundred user simultaniously. So for this server application and test strategy, the Test Lead has set the minimum number of the server to handle to 200.
+Internet of Things applications are usually lower end hardware that does not need to handle extreme user load, but need to be reliable when accessed. As many IoT-application might not need to handle more than a maximum of a couple of hundred user simultaneously. So for this server application and test strategy, the Test Lead has set the minimum number of the server to handle to 200.
 
 The goal of the test plan is to see if the abandoned server software is suitable for _SDC_ to use for their IoT applications, and outline what bugs exists in the web server. This is needed to plan for further development of the server application, if it is deemed good enough by the stakeholders.
 
@@ -83,22 +83,22 @@ The test case IDs are a direct reference to the requirements document, and the r
 Test-id: REQ1.1
 
 ### Description
-The web server should be perform "desirably" when recieving HTTP requests from multiple user at once. The minimum number of request per second the application should be able to handle is 200. To ensure this, it is requested to test it under double that load.
+The web server should be perform "desirably" when receiving HTTP requests from multiple user at once. The minimum number of request per second the application should be able to handle is 200. To ensure this, it is requested to test it under double that load.
 
 Apache JMeter, or similar, should be used to during the performance and load tests.
 
-### Pre-condition
+### Precondition
 
 _MyWebserver_ should be started with working contents.
 
 ### Test steps
 
-1. Setup a JMeter 'test plan' for the webserver.
+1. Setup a JMeter 'test plan' for the web server.
 2. Set the 'Number of Threads' to 400 for a ramp-up period of 1 second.
 3. Run the load tests.
 
 ### Expected Result
-The webserver should _not_ fail (as in, not crash or report a failed status in JMeter), and the responses should not have an average latency higher than 30 milliseconds.
+The web server should _not_ fail (as in, not crash or report a failed status in JMeter), and the responses should not have an average latency higher than 30 milliseconds.
 
 ---
 
@@ -108,18 +108,18 @@ Test-id: REQ2.1
 ### Description
 To get an accurate test of the HTTP protocol, Wireshark should be used to analyze the packets sent from the web server to verify that HTTP protocol version 1.1 or later is being used.
 
-### Pre-condition
+### Precondition
 
 _MyWebserver_ should be started with working contents.
 
 ### Test steps
 
-1. Setup Wireshark to listen to the trafic while accessing the web server.
+1. Setup Wireshark to listen to the traffic while accessing the web server.
 2. Access the web server using any web browser.
 
 ### Expected Result
 
-Wireshark analysis should show that HTTP 1.1 is used when requesting the webserver in the web browser, and respond with the same protocol.
+Wireshark analysis should show that HTTP 1.1 is used when requesting the web server in the web browser, and respond with the same protocol.
 
 ---
 
@@ -129,11 +129,11 @@ Test-id: REQ3.1
 
 ### Description
 
-To test the webserver on all required operating systems, some testing will have to be postponed to future iterations as the test team currently does not have access to all operating system in the requirements.
+To test the web server on all required operating systems, some testing will have to be postponed to future iterations as the test team currently does not have access to all operating system in the requirements.
 
 However, being a web server written in Java, the server _should_ work on all listed operating systems under the assumption that they have a proper installation of Java.
 
-### Pre-condition
+### Precondition
 
 * Java version 1.7 or later installed on system for test.
 
@@ -152,7 +152,7 @@ What it is...
 Test-id: REQ4.1
 
 ### Description
-The web server application should be released under GPL-2.0 for _SDC_. Control that the license of the abandonded server source code allows for this license.
+The web server application should be released under GPL-2.0 for _SDC_. Control that the license of the abandoned server source code allows for this license.
 
 ### Test steps
 
@@ -171,8 +171,8 @@ Test-id: REQ5.1
 ### Description
 The system should have a access log that you can access and read from a text editor.
 
-### Pre-condition
-Started server with wortking content
+### Precondition
+Started server with working content
 Some test-access visits
 
 ### Test steps
@@ -232,7 +232,7 @@ Test-id: UC1.4a
 ### Description
 If we try to start the server on a port that is taken we need the system to show this in an output.
 
-### Pre-condition
+### Precondition
 
 ### Test steps
 
@@ -251,7 +251,7 @@ Test-id: UC1.4b
 ### Description
 When trying to start a web server using a resource folder with insufficient rights, the server should present an error message that it cannot access the resources.
 
-### Pre-condition
+### Precondition
 
 Start a server using a folder with no read or write permissions for the user starting the server.
 
@@ -273,7 +273,7 @@ Test-id: UC1.4c
 
 If the system does not have write permissions on the `log.txt` there should be an error message printed.
 
-### Pre-condition
+### Precondition
 
 Server started with no read/write permissions on the resource folder.
 
@@ -296,7 +296,7 @@ Test-id: UC2.1
 
 When the administrator stops the web server, the system should inform the administrator that the server has successfully stopped.
 
-### Pre-condition
+### Precondition
 
 A web server should be started.
 
@@ -319,7 +319,7 @@ Test-id: UC2.2
 
 When the server is stopped, it should be noted in the access log.
 
-### Pre-condition
+### Precondition
 
 The test case UC2.1 should have been performed.
 
@@ -342,7 +342,7 @@ Test-id: UC3.2
 
 The server should deliver the shared resource to the web browser when a user accesses the website.
 
-### Pre-condition
+### Precondition
 
 A web server should be started.
 
@@ -365,7 +365,7 @@ Test-id: UC3.2a
 
 When trying to access a resource that does not exist, an error message should be presented to the browser user.
 
-### Pre-condition
+### Precondition
 
 A web server should be started.
 
@@ -388,7 +388,7 @@ Test-id: UC3.2b
 
 When trying to access a resource that the server does not have read permissions on, the user should get a message that access is forbidden.
 
-### Pre-condition
+### Precondition
 
 A web server should be started. A resource with restricted permissions should be present.
 
@@ -411,7 +411,7 @@ Test-id: UC3.2c
 
 If trying to access the server with an invalid request, the server should respond with an error message.
 
-### Pre-condition
+### Precondition
 
 A web server should be started.
 
@@ -463,7 +463,7 @@ Test performed by: Tester #1
 
 ### Test-id: REQ1.1
 
-The weberver holds up to the workload under the JMeter stresstest, and the average latency was reported to 18 millseconds with a deviation of up to 20 milliseconds at the most.
+The web server holds up to the workload under the JMeter stress test, and the average latency was reported to 18 milliseconds with a deviation of up to 20 milliseconds at the most.
 
 ### Test result: Passed.
 
@@ -506,7 +506,7 @@ Test performed by: Tester #1
 
 ### Test-id: REQ4.1
 
-The abandonware is released under the MIT license, which allows for a GPL-2.0 sublicense.
+The abandonware is released under the MIT license, which allows for a GPL-2.0 sub-license.
 
 ### Test result: Passed.
 
@@ -586,7 +586,7 @@ Test performed by: Tester #1
 
 ### Test-id: UC1.4c
 
-Could not perform this test accuratly as the system has not yet implemented the access log.
+Could not perform this test accurately as the system has not yet implemented the access log.
 
 ### Test result: Failed.
 
