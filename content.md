@@ -18,12 +18,12 @@
 ##### 3.8 Start server - Error on port taken
 ##### 3.9 Start server - Error on restricted resources
 ##### 3.10 Start server - Access log could not be written to
-##### 3.10 Stop server
 ##### 3.11 Stop server
-##### 3.12 Request shared resource
-##### 3.13 Request shared resource - 404 Not Found
-##### 3.13 Request shared resource - 403 Forbidden
-##### 3.13 Request shared resource - 400 Bad Request
+##### 3.12 Stop server
+##### 3.13 Request shared resource
+##### 3.14 Request shared resource - 404 Not Found
+##### 3.15 Request shared resource - 403 Forbidden
+##### 3.16 Request shared resource - 400 Bad Request
 ### 4. Test results
 ##### 4.1 The web server should be responsive under high load
 ##### 4.2 The web server must follow minimum requirements for HTTP 1.1
@@ -37,6 +37,7 @@
 ##### 4.10 Start server - The access log could not be written to
 ##### 4.11 Stop server
 ##### 4.12 Stop server
-##### 4.12 Request shared resource
-##### 4.13 Request shared resource - 404 Not Found
-##### 4.14 Request shared resource - 403 Forbidden
+##### 4.13 Request shared resource
+##### 4.14 Request shared resource - 404 Not Found
+##### 4.15 Request shared resource - 403 Forbidden
+##### 4.15 Request shared resource - 400 Bad Request

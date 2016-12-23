@@ -246,7 +246,7 @@ System presents an error message. “Cannot write to server log file log.txt”
 
 ---
 
-## 3.10 Stop server
+## 3.11 Stop server
 
 Test-id: UC2.1
 
@@ -269,7 +269,7 @@ The system should print a stop message.
 
 ---
 
-## 3.11 Stop server
+## 3.12 Stop server
 
 Test-id: UC2.2
 
@@ -292,7 +292,7 @@ Access log should contain a stop message.
 
 ---
 
-## 3.12 Request shared resource
+## 3.13 Request shared resource
 
 Test-id: UC3.2
 
@@ -315,7 +315,7 @@ Content should be visible in the browser, and a message should be written to the
 
 ---
 
-## 3.13 Request shared resource - 404 Not Found
+## 3.14 Request shared resource - 404 Not Found
 
 Test-id: UC3.2a
 
@@ -338,7 +338,7 @@ A `404 Not Found` should be presented in the web browser.
 
 ---
 
-## 3.13 Request shared resource - 403 Forbidden
+## 3.15 Request shared resource - 403 Forbidden
 
 Test-id: UC3.2b
 
@@ -361,7 +361,7 @@ A `403 Forbidden` should be presented in the web browser.
 
 ---
 
-## 3.13 Request shared resource - 400 Bad Request
+## 3.16 Request shared resource - 400 Bad Request
 
 Test-id: UC3.2c
 
@@ -564,7 +564,7 @@ Access log could not be accessed.
 
 ---
 
-## 4.12 Request shared resource
+## 4.13 Request shared resource
 
 Test performed by: Tester #2
 
@@ -576,11 +576,11 @@ Content is visible in the browser, but the system failed to write to the log fil
 
 ---
 
-## 4.13 Request shared resource - 404 Not Found
+## 4.14 Request shared resource - 404 Not Found
 
 Test performed by: Tester #1
 
-### Test-id: UC3.2
+### Test-id: UC3.2a
 
 A 404-message is correctly being displayed.
 
@@ -588,11 +588,23 @@ A 404-message is correctly being displayed.
 
 ---
 
-## 4.14 Request shared resource - 403 Forbidden
+## 4.15 Request shared resource - 403 Forbidden
 
 Test performed by: Tester #2
 
-### Test-id: UC3.2
+### Test-id: UC3.2b
+
+A faulty message was presented, instead of a 403 the result was that the server `unexpectedly closed the connection`.
+
+### Test result: Failed.
+
+---
+
+## 4.16 Request shared resource - 400 Bad Request
+
+Test performed by: Tester #1
+
+### Test-id: UC3.2c
 
 A faulty message was presented, instead of a 403 the result was that the server `unexpectedly closed the connection`.
 
