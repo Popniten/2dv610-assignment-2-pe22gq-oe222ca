@@ -1,9 +1,48 @@
 # Table of content
 
-### 1. Introduction
-### 2. Test plan
-### 3. Test cases
-### 4. Test results
+- [Table of content](#table-of-content)
+- [1. Introduction](#1-introduction)
+  - [1.1. Test overview](#11-test-overview)
+  - [1.2. Goals and objectives](#12-goals-and-objectives)
+  - [1.3. Resources](#13-resources)
+- [2. Test plan](#2-test-plan)
+  - [2.1. Test levels](#21-test-levels)
+  - [2.2 What should not be tested](#22-what-should-not-be-tested)
+- [3. Test cases](#3-test-cases)
+  - [3.1 The web server should be responsive under high load](#31-the-web-server-should-be-responsive-under-high-load)
+  - [3.2 The web server must follow minimum requirements for HTTP 1.1](#32-the-web-server-must-follow-minimum-requirements-for-http-11)
+  - [3.3 The web server must work on Linux, Mac, Windows*.](#33-the-web-server-must-work-on-linux-mac-windows)
+  - [3.4 The source code should be released under GPL-2.0.](#34-the-source-code-should-be-released-under-gpl-20)
+  - [3.5 The access log should be viewable from a text editor.](#35-the-access-log-should-be-viewable-from-a-text-editor)
+  - [3.6 Start server - System asks for socket port number and shared resource container](#36-start-server---system-asks-for-socket-port-number-and-shared-resource-container)
+  - [3.7 Start server - System starts a web server on the given port and presents that the server was started and writes a note in the access log.](#37-start-server---system-starts-a-web-server-on-the-given-port-and-presents-that-the-server-was-started-and-writes-a-note-in-the-access-log)
+  - [3.8 Start server - Error on port taken](#38-start-server---error-on-port-taken)
+  - [3.9 Start server - Error on restricted resources](#39-start-server---error-on-restricted-resources)
+  - [3.10 Start server - Access log could not be written to](#310-start-server---access-log-could-not-be-written-to)
+  - [3.11 Stop server](#311-stop-server)
+  - [3.12 Stop server](#312-stop-server)
+  - [3.13 Request shared resource](#313-request-shared-resource)
+  - [3.14 Request shared resource - 404 Not Found](#314-request-shared-resource---404-not-found)
+  - [3.15 Request shared resource - 403 Forbidden](#315-request-shared-resource---403-forbidden)
+  - [3.16 Request shared resource - 400 Bad Request](#316-request-shared-resource---400-bad-request)
+- [4. Test results](#4-test-results)
+  - [Requirement coverage matrix](#requirement-coverage-matrix)
+  - [4.1 The web server should be responsive under high load](#41-the-web-server-should-be-responsive-under-high-load)
+  - [4.2 The web server must follow minimum requirements for HTTP 1.1](#42-the-web-server-must-follow-minimum-requirements-for-http-11)
+  - [4.3 The web server must work on Linux, Mac, Windows*](#43-the-web-server-must-work-on-linux-mac-windows)
+  - [4.4 The source code should be released under GPL-2.0.](#44-the-source-code-should-be-released-under-gpl-20)
+  - [4.5 The access log should be viewable from a text editor.](#45-the-access-log-should-be-viewable-from-a-text-editor)
+  - [4.6 Start server - System asks for socket port number and shared resource container](#46-start-server---system-asks-for-socket-port-number-and-shared-resource-container)
+  - [4.7 Start server - System starts a web server...](#47-start-server---system-starts-a-web-server)
+  - [4.8 Start server - Error on port taken](#48-start-server---error-on-port-taken)
+  - [4.9 Start server - Error on restricted resources](#49-start-server---error-on-restricted-resources)
+  - [4.10 Start server - The access log could not be written to](#410-start-server---the-access-log-could-not-be-written-to)
+  - [4.11 Stop server](#411-stop-server)
+  - [4.12 Stop server](#412-stop-server)
+  - [4.13 Request shared resource](#413-request-shared-resource)
+  - [4.14 Request shared resource - 404 Not Found](#414-request-shared-resource---404-not-found)
+  - [4.15 Request shared resource - 403 Forbidden](#415-request-shared-resource---403-forbidden)
+  - [4.16 Request shared resource - 400 Bad Request](#416-request-shared-resource---400-bad-request)
 
 # 1. Introduction
 
@@ -22,10 +61,10 @@ The goal of the test plan is to see if the abandoned server software is suitable
 * Two persons, Tester #1 (Tester #1 will also act as Test Lead to make certain decisions) and Tester #2. One work week each, total of 80 hours.
 * Ubuntu 16.04 operating system as testing platform.
 * Postman Chrome plugin for API testing.
+* Wireshark
+* Apache JMeter
 
 # 2. Test plan
-
-
 
 ## 2.1. Test levels
 
