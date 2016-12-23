@@ -273,10 +273,22 @@ There is no access log in the system.
 
 ## 4.6 
 
-### Test-id: UC1.1
+### Test-id: UC1.4a
 
 There is output indicating that the port is taken, however, it only shows "Port is taken" - not the port number being used.
 
 ### Test result: Failed.
 
 ---
+
+## 4.6 
+
+### Test-id: UC1.4b
+
+The server starts without any error messages displayed, but when accessing the website in the browser, the user gets a 404 message there instead.
+
+### Test result: Failed.
+
+---
+
+
